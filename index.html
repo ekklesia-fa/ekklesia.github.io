@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | Ekklesia Family</title>
+    <!-- css w3 -->
+    <link rel="stylesheet" href="./asset/css/w3.css">
+    <!-- css loader -->
+    <link rel="stylesheet" href="./asset/css/myLoader.css">
+    <!-- css custom -->
+    <link rel="stylesheet" href="./asset/css/myStyle.css">
+</head>
+<body>
+    <!-- #loader -->
+    <div id="loader"><span></span><span></span><span></span><span></span><span></span></div>
+    <!-- end #loader -->
+
+    <div id="mySidebar" class="w3-sidebar w3-indigo w3-animate-left w3-collapse">
+        <div class="w3-bar w3-card">
+            <div class="w3-bar-item w3-right w3-button w3-red w3-opacity-min w3-hover-opacity-off w3-hover-red" onclick="w3_close('mySidebar')">
+                <span class="w3-large">&times;</span>
+            </div>
+        </div>
+        <div class="w3-xlarge w3-center">
+            <h1>EKKLESIA FAMILY</h1>
+        </div>
+        <div class="w3-bar-block" id="nav"></div>
+        <!-- template-nav -->
+        <script id="template-nav" type="text/html">
+            <div id="nav-menu">
+                {{#result}}
+                <a href="JavaScript:w3_goto('{{href}}')" title="{{title}}" class="w3-bar-item w3-button w3-hover-black w3-opacity-min">{{text}}</a>
+                {{/result}}
+            </div>
+        </script>
+        <!-- nav template nav -->
+    </div>
+
+    <!-- #navbar -->
+    <header id="navbar">
+        <div class="w3-bar w3-large w3-black w3-card">
+            <div class="w3-bar-item w3-button" onclick="w3_open('mySidebar')">&circledast;</div>
+            <div id="title" class="w3-bar-item">..</div>
+        </div>
+    </header>
+    <!-- end #navbar -->
+
+    <!-- #landing -->
+    <div id="landing">
+        <!-- #gretting -->
+        <div id="gretting" class="w3-container w3-light-gray">
+            <div class="w3-section">
+                <div class="w3-xlarge w3-text-indigo">Shallom</div>
+                <div class="w3-text-blue-grey w3-small">Salam Damai Sejahtera dari Tuhan, semoga beserta dengan kita semua.</div>
+        
+                <div class="w3-panel w3-white w3-leftbar w3-display-container w3-round-large">
+                    <div id="loading" class="ayat" style="position: absolute;"><span></span><span></span><span></span><span></span></div>
+                    <div id="ayat">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end #gretting -->
+        
+        <!-- template-ayat -->
+        <script id="template-ayat" type="x-tmpl-mustache">
+            <div class="w3-center w3-large w3-padding-small">&ldquo; {{isi}} &rdquo;</div>
+            <div class="w3-small w3-text-gray">&rdsh; {{ayat}}</div>
+            <div class="w3-display-hover w3-display-topleft">
+                <span class="w3-button">&ii;</span>
+            </div>
+            <div class="w3-display-hover w3-display-bottomright">
+                <span class="w3-button w3-text-green">A</span>
+                <span class="w3-button w3-text-red">B</span>
+            </div>
+        </script>
+        <!-- end template-ayat -->
+    
+        <!-- <div id="nav-menu" class="w3-panel">
+            <a href="/" title="Beranda" class="w3-button w3-green">Beranda</a>
+            <a href="?jadwal" title="Jadwal" class="w3-button w3-green">Jadwal</a>
+            <a href="?jadwal/id/2" title="Jadwal" class="w3-button w3-green">Jadwal/2</a>
+        </div> -->
+    
+        <!-- Breadcrump -->
+        <div class="w3-panel w3-small">&rdsh; Beranda &RightAngleBracket;</div>
+        <!-- end Breadcrump -->
+    
+        <!-- hai -->
+        <div class="w3-container w3-light-grey">
+            <div class="w3-xlarge"><h2># Hai.. Sobat muda.. </h2></div>
+            <div class="w3-panel w3-leftbar w3-text-blue-grey">
+                <div>Gabung yuk.. dalam ibadah pemuda bersama kami.</div>
+            </div>
+            <button class="w3-panel w3-padding-large w3-button w3-block w3-blue">Lihat jadwalnya</button>
+        </div>
+        <!-- end hai -->
+    </div>
+    <!-- end #landing -->
+
+    <!-- #content -->
+    <main id="content"></main>
+    <!-- end #content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Here -->
+    <!-- Jquery -->
+    <script src="./asset/js/jquery-3.5.1.min.js"></script>
+    <!-- Mustache -->
+    <script src="./asset/js/mustache.js"></script>
+    <!-- JS custom -->
+    <script src="./asset/js/myScript.js"></script>
+</body>
+</html>
