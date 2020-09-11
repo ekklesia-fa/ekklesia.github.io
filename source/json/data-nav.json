@@ -1,0 +1,23 @@
+{
+    "result":
+    [
+        {
+            "id":1,
+            "href":"?",
+            "title":"Beranda",
+            "text":"Beranda"
+        },
+        {
+            "id":2,
+            "href":"?jadwal",
+            "title":"Jadwal",
+            "text":"Jadwal"
+        },
+        {
+            "id":3,
+            "href":"?jadwal/id/2",
+            "title":"Jadwal",
+            "text":"Jadwal/2"
+        }
+    ]
+}
